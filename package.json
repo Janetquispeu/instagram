@@ -1,0 +1,28 @@
+{
+  "name": "instagram-yo",
+  "version": "1.0.0",
+  "description": "Instagram ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janetquispeu/instagram.git"
+  },
+  "keywords": [
+    "Instagram",
+    "Json"
+  ],
+  "author": " Janet Quispe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Janetquispeu/instagram/issues"
+  },
+  "homepage": "https://github.com/Janetquispeu/instagram#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.1"
+  }
+}
