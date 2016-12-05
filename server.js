@@ -5,6 +5,9 @@ var io= require("socket.io")(http);
 
 app.use(express.static(__dirname + "/public"));
 
+app.set("public", __dirname+ "/public");
+
+app.set("port",process.env.PORT || 3030);//ksjdlks
 //sockets
 
 io.sockets.on("connection", function(socket){
@@ -15,15 +18,12 @@ io.sockets.on("connection", function(socket){
 	socket.broadcast.on("datos", function(datos){
 		io.sockets.emit("nombresSrc", datos);
 	})
-});
+})
 app.get("/", function(req,res){
 	res.render("search.html");
 
-});
+})
 
-app.set("port",process.env.PORT || 3030);//hvhyu
-
-app.listen(app.get("port"),function() {
-	console.log("servidor encendido");
-
+http.listen(app.get("port"), function(){
+	console.log("Servidor encendido.");
 });
