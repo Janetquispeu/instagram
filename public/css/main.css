@@ -6,15 +6,15 @@
 	min-width: 100vw;
 	background-position: center;
 } 
+a.test1{
+	color: black !important;
+}
 
 a{
 	color: snow!important;
 }
 i:hover{
 	color: purple !important;
-}
-a.test1{
-	color: black !important;
 }
 .imgShare{
 	height: 113px;
