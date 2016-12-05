@@ -17,11 +17,11 @@ io.sockets.on("connection", function(socket){
 	socket.broadcast.on("datos", function(datos){
 		io.sockets.emit("nombresSrc", datos);
 	})
-})
+});
 app.get("/", function(req,res){
 	res.render("search.html");
 
-})
+});
 
 app.set("port",process.env.PORT || 3030);//hvhyu
 
