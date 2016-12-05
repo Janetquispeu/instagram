@@ -1,12 +1,21 @@
  .bg{
-	background: url(../assets/img/fondo.jpg) no-repeat;
-	background-size: cover;
+	background: url(../assets/img/fondo3.jfif)no-repeat;
+	background-size: 100%;
 	overflow:hidden;
 	min-height: 100vh;
 	min-width: 100vw;
 	background-position: center;
 } 
 
+a{
+	color: snow!important;
+}
+i:hover{
+	color: purple !important;
+}
+a.test1{
+	color: black !important;
+}
 .imgShare{
 	height: 113px;
 	width: 59%;
@@ -25,8 +34,11 @@
 }
 
 .post{
-	font-size: 1.3em;
-  padding: 5%;
+	font-size: 1.2em;
+  padding: 3% 2% 4% 2%;
+  border: 1px solid gray;
+  margin-top: 1%;
+  border-radius: 10px;
 }
 .btn-Share{
 	margin-right: 2%;
