@@ -5,8 +5,6 @@ var io= require("socket.io")(http);
 
 app.use(express.static(__dirname + "/public"));
 
-app.set("public", __dirname+ "/public");
-
 //sockets
 
 io.sockets.on("connection", function(socket){
