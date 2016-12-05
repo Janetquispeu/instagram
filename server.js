@@ -23,6 +23,9 @@ app.get("/", function(req,res){
 
 })
 
-http.listen(3030, function(){
-	console.log("Servidor encendido.");
+app.set("port",process.env.PORT || 3030);//hvhyu
+
+app.listen(app.get("port"),function() {
+	console.log("servidor encendido");
+
 });
